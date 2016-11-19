@@ -26,6 +26,11 @@
 		A7C9D4251DE0CF7300EA5637 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4241DE0CF7300EA5637 /* Player.swift */; };
 		A7C9D4271DE0DB3500EA5637 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4261DE0DB3500EA5637 /* Dealer.swift */; };
 		E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */; };
+		E57F07C11DE0F0200035A51A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F07BF1DE0F0200035A51A /* Constants.swift */; };
+		E57F07C21DE0F0200035A51A /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F07C01DE0F0200035A51A /* Secrets.swift */; };
+		E57F07C41DE0F03C0035A51A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F07C31DE0F03C0035A51A /* Extensions.swift */; };
+		E57F07C61DE0F0EF0035A51A /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F07C51DE0F0EF0035A51A /* AppController.swift */; };
+		E5ED8EB21DE0F2AE005874E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5ED8EB11DE0F2AE005874E9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,11 @@
 		A7C9D4241DE0CF7300EA5637 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A7C9D4261DE0DB3500EA5637 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
 		E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E57F07BF1DE0F0200035A51A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E57F07C01DE0F0200035A51A /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		E57F07C31DE0F03C0035A51A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E57F07C51DE0F0EF0035A51A /* AppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		E5ED8EB11DE0F2AE005874E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,7 @@
 				A7C9D40A1DE0A15000EA5637 /* Assets.xcassets */,
 				A7C9D40C1DE0A15000EA5637 /* LaunchScreen.storyboard */,
 				708F438C1DE0D4B1008A272E /* Main.storyboard */,
+				E5ED8EB11DE0F2AE005874E9 /* GoogleService-Info.plist */,
 				A7C9D40F1DE0A15000EA5637 /* Info.plist */,
 				A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */,
 			);
@@ -133,6 +144,7 @@
 		E50CB1801DE0AA4200A384B9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E57F07C51DE0F0EF0035A51A /* AppController.swift */,
 				A7C9D4021DE0A15000EA5637 /* ViewController.swift */,
 				E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */,
 				A7C9D41A1DE0B15800EA5637 /* MainTableViewController.swift */,
@@ -143,6 +155,9 @@
 		E50CB1811DE0AA9900A384B9 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				E57F07BF1DE0F0200035A51A /* Constants.swift */,
+				E57F07C01DE0F0200035A51A /* Secrets.swift */,
+				E57F07C31DE0F03C0035A51A /* Extensions.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -231,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				708F438D1DE0D4B1008A272E /* Main.storyboard in Resources */,
+				E5ED8EB21DE0F2AE005874E9 /* GoogleService-Info.plist in Resources */,
 				A7C9D40E1DE0A15000EA5637 /* LaunchScreen.storyboard in Resources */,
 				A7C9D40B1DE0A15000EA5637 /* Assets.xcassets in Resources */,
 			);
@@ -292,9 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7C9D41D1DE0B2B100EA5637 /* CardGameLogic.swift in Sources */,
+				E57F07C21DE0F0200035A51A /* Secrets.swift in Sources */,
 				A7C9D4231DE0B8AC00EA5637 /* Card.swift in Sources */,
 				E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */,
 				A7C9D4031DE0A15000EA5637 /* ViewController.swift in Sources */,
+				E57F07C41DE0F03C0035A51A /* Extensions.swift in Sources */,
 				708F438F1DE0D6DA008A272E /* UserTableViewCell.swift in Sources */,
 				8326631B1DE0F33300126B99 /* FirebaseDatabase.swift in Sources */,
 				A7C9D4091DE0A15000EA5637 /* InBetWin.xcdatamodeld in Sources */,
@@ -302,8 +320,10 @@
 				A7C9D4211DE0B83000EA5637 /* Deck.swift in Sources */,
 				832663191DE0F23300126B99 /* Table.swift in Sources */,
 				A7C9D41B1DE0B15800EA5637 /* MainTableViewController.swift in Sources */,
+				E57F07C61DE0F0EF0035A51A /* AppController.swift in Sources */,
 				A7C9D41F1DE0B40000EA5637 /* CardAPIClient.swift in Sources */,
 				A7C9D4251DE0CF7300EA5637 /* Player.swift in Sources */,
+				E57F07C11DE0F0200035A51A /* Constants.swift in Sources */,
 				A7C9D4271DE0DB3500EA5637 /* Dealer.swift in Sources */,
 				A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */,
 			);
