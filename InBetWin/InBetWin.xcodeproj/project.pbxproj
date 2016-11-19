@@ -14,6 +14,11 @@
 		A7C9D4091DE0A15000EA5637 /* InBetWin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */; };
 		A7C9D40B1DE0A15000EA5637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D40A1DE0A15000EA5637 /* Assets.xcassets */; };
 		A7C9D40E1DE0A15000EA5637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D40C1DE0A15000EA5637 /* LaunchScreen.storyboard */; };
+		A7C9D41B1DE0B15800EA5637 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D41A1DE0B15800EA5637 /* MainTableViewController.swift */; };
+		A7C9D41D1DE0B2B100EA5637 /* CardGameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D41C1DE0B2B100EA5637 /* CardGameLogic.swift */; };
+		A7C9D41F1DE0B40000EA5637 /* CardAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D41E1DE0B40000EA5637 /* CardAPIClient.swift */; };
+		A7C9D4211DE0B83000EA5637 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4201DE0B83000EA5637 /* Deck.swift */; };
+		A7C9D4231DE0B8AC00EA5637 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4221DE0B8AC00EA5637 /* Card.swift */; };
 		E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +34,11 @@
 		A7C9D40A1DE0A15000EA5637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7C9D40D1DE0A15000EA5637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7C9D40F1DE0A15000EA5637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7C9D41A1DE0B15800EA5637 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		A7C9D41C1DE0B2B100EA5637 /* CardGameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardGameLogic.swift; sourceTree = "<group>"; };
+		A7C9D41E1DE0B40000EA5637 /* CardAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAPIClient.swift; sourceTree = "<group>"; };
+		A7C9D4201DE0B83000EA5637 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		A7C9D4221DE0B8AC00EA5637 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +110,7 @@
 		E50CB17F1DE0AA2F00A384B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A7C9D41C1DE0B2B100EA5637 /* CardGameLogic.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -109,6 +120,7 @@
 			children = (
 				A7C9D4021DE0A15000EA5637 /* ViewController.swift */,
 				E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */,
+				A7C9D41A1DE0B15800EA5637 /* MainTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -130,6 +142,9 @@
 		E50CB1831DE0AAE300A384B9 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				A7C9D41E1DE0B40000EA5637 /* CardAPIClient.swift */,
+				A7C9D4201DE0B83000EA5637 /* Deck.swift */,
+				A7C9D4221DE0B8AC00EA5637 /* Card.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -258,9 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C9D41D1DE0B2B100EA5637 /* CardGameLogic.swift in Sources */,
+				A7C9D4231DE0B8AC00EA5637 /* Card.swift in Sources */,
 				E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */,
 				A7C9D4031DE0A15000EA5637 /* ViewController.swift in Sources */,
 				A7C9D4091DE0A15000EA5637 /* InBetWin.xcdatamodeld in Sources */,
+				A7C9D4211DE0B83000EA5637 /* Deck.swift in Sources */,
+				A7C9D41B1DE0B15800EA5637 /* MainTableViewController.swift in Sources */,
+				A7C9D41F1DE0B40000EA5637 /* CardAPIClient.swift in Sources */,
 				A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
