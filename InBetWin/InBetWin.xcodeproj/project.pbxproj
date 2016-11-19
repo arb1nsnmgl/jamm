@@ -19,6 +19,8 @@
 		A7C9D41F1DE0B40000EA5637 /* CardAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D41E1DE0B40000EA5637 /* CardAPIClient.swift */; };
 		A7C9D4211DE0B83000EA5637 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4201DE0B83000EA5637 /* Deck.swift */; };
 		A7C9D4231DE0B8AC00EA5637 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4221DE0B8AC00EA5637 /* Card.swift */; };
+		A7C9D4251DE0CF7300EA5637 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4241DE0CF7300EA5637 /* Player.swift */; };
+		A7C9D4271DE0DB3500EA5637 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4261DE0DB3500EA5637 /* Dealer.swift */; };
 		E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		A7C9D41E1DE0B40000EA5637 /* CardAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAPIClient.swift; sourceTree = "<group>"; };
 		A7C9D4201DE0B83000EA5637 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		A7C9D4221DE0B8AC00EA5637 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A7C9D4241DE0CF7300EA5637 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A7C9D4261DE0DB3500EA5637 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
 		E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				A7C9D41C1DE0B2B100EA5637 /* CardGameLogic.swift */,
+				A7C9D4241DE0CF7300EA5637 /* Player.swift */,
+				A7C9D4261DE0DB3500EA5637 /* Dealer.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -281,6 +287,8 @@
 				A7C9D4211DE0B83000EA5637 /* Deck.swift in Sources */,
 				A7C9D41B1DE0B15800EA5637 /* MainTableViewController.swift in Sources */,
 				A7C9D41F1DE0B40000EA5637 /* CardAPIClient.swift in Sources */,
+				A7C9D4251DE0CF7300EA5637 /* Player.swift in Sources */,
+				A7C9D4271DE0DB3500EA5637 /* Dealer.swift in Sources */,
 				A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
