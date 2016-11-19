@@ -27,7 +27,7 @@ extension String {
 class CardGameLogic {
     
     var deck = Deck()
-    var player = Player()
+//    var player = Player()
     var dealer = Dealer()
     
     func drawCardforDealer() -> Int {
@@ -57,7 +57,7 @@ class CardGameLogic {
         return cardValue
     }
     
-    func evaluateCard(_ player: )
+//    func evaluateCard(_ player: )
     
     
 }
