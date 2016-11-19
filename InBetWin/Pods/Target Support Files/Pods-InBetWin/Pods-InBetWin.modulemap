@@ -1,0 +1,6 @@
+framework module Pods_InBetWin {
+  umbrella header "Pods-InBetWin-umbrella.h"
+
+  export *
+  module * { export * }
+}
