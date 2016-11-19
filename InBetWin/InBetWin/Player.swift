@@ -15,9 +15,8 @@ class Player {
     var tokens : Double
     var isBetting = false
     
-    init(cardsInHand: [Card], tokens: Double) {
+    init(tokens: Double) {
         
-        self.cardsInHand = cardsInHand
         self.tokens = tokens
         
     }

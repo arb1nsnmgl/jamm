@@ -10,7 +10,6 @@
 		1BAEDAAA71D2AAC3217E7FFE /* Pods_InBetWin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644735F79E92DE1831EBEA00 /* Pods_InBetWin.framework */; };
 		A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */; };
 		A7C9D4031DE0A15000EA5637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4021DE0A15000EA5637 /* ViewController.swift */; };
-		A7C9D4061DE0A15000EA5637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D4041DE0A15000EA5637 /* Main.storyboard */; };
 		A7C9D4091DE0A15000EA5637 /* InBetWin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */; };
 		A7C9D40B1DE0A15000EA5637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D40A1DE0A15000EA5637 /* Assets.xcassets */; };
 		A7C9D40E1DE0A15000EA5637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D40C1DE0A15000EA5637 /* LaunchScreen.storyboard */; };
@@ -31,7 +30,6 @@
 		A7C9D3FD1DE0A15000EA5637 /* InBetWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InBetWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7C9D4021DE0A15000EA5637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7C9D4051DE0A15000EA5637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7C9D4081DE0A15000EA5637 /* InBetWin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InBetWin.xcdatamodel; sourceTree = "<group>"; };
 		A7C9D40A1DE0A15000EA5637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7C9D40D1DE0A15000EA5637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				E50CB1801DE0AA4200A384B9 /* Controllers */,
 				E50CB1811DE0AA9900A384B9 /* Constants */,
 				A7C9D40A1DE0A15000EA5637 /* Assets.xcassets */,
-				A7C9D4041DE0A15000EA5637 /* Main.storyboard */,
 				A7C9D40C1DE0A15000EA5637 /* LaunchScreen.storyboard */,
 				A7C9D40F1DE0A15000EA5637 /* Info.plist */,
 				A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */,
@@ -220,7 +217,6 @@
 			files = (
 				A7C9D40E1DE0A15000EA5637 /* LaunchScreen.storyboard in Resources */,
 				A7C9D40B1DE0A15000EA5637 /* Assets.xcassets in Resources */,
-				A7C9D4061DE0A15000EA5637 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +292,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A7C9D4041DE0A15000EA5637 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7C9D4051DE0A15000EA5637 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7C9D40C1DE0A15000EA5637 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

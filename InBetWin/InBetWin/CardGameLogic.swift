@@ -27,37 +27,52 @@ extension String {
 class CardGameLogic {
     
     var deck = Deck()
-    var player = Player()
-    var dealer = Dealer()
+    var playerCardValue : [Int] = []
+    var dealerCardValue : Int?
     
-    func drawCardforDealer() -> Int {
+    func drawCardforDealer() {
         
-        var cardValue : Int!
         deck.drawCards(numberOfCards: 1, handler: { success, card in
+            
+            
             OperationQueue.main.addOperation {
+                //card[0].downloadImage(<#T##handler: (Bool) -> Void##(Bool) -> Void#>)
                 if let value = card?[0].value {
-                    cardValue = value.returnValue()
+                    self.dealerCardValue = value.returnValue()
                 }
             }
         })
-        return cardValue
+        
     }
     
-    func drawCardForPlayers() -> [Int] {
-        var cardValue : [Int] = []
+    func drawCardForPlayers() {
+        
         deck.drawCards(numberOfCards: 2, handler: { success, cards in
             
             guard let drawnCards = cards else { fatalError() }
             for card in drawnCards {
                 OperationQueue.main.addOperation {
-                     cardValue.append(card.value.returnValue())
+                    //card.downloadImage(<#T##handler: (Bool) -> Void##(Bool) -> Void#>)
+                    self.playerCardValue.append(card.value.returnValue())
+                    self.playerCardValue.sort(by: <)
                 }
             }
         })
-        return cardValue
+        
     }
     
-    func evaluateCard(_ player: )
-    
-    
+    func evaluateCard() {
+        
+        guard let playerFirstCard = playerCardValue.first else { return }
+        guard let playerSecondCard = playerCardValue.last else { return }
+        guard let dealerCard = dealerCardValue else { return }
+        
+        switch dealerCard {
+        case playerFirstCard, playerSecondCard: print("you lose")
+        case playerFirstCard...playerSecondCard: print("In between!")
+        default: print("You lose")
+            
+        }
+        
+    }
 }

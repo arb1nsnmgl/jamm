@@ -10,5 +10,7 @@ import Foundation
 
 
 class Dealer {
+ 
+    var cardInHand : Card?
     
 }
