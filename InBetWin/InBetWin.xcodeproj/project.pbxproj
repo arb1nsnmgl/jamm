@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BAEDAAA71D2AAC3217E7FFE /* Pods_InBetWin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644735F79E92DE1831EBEA00 /* Pods_InBetWin.framework */; };
+		A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */; };
+		A7C9D4031DE0A15000EA5637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4021DE0A15000EA5637 /* ViewController.swift */; };
+		A7C9D4061DE0A15000EA5637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D4041DE0A15000EA5637 /* Main.storyboard */; };
+		A7C9D4091DE0A15000EA5637 /* InBetWin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */; };
+		A7C9D40B1DE0A15000EA5637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D40A1DE0A15000EA5637 /* Assets.xcassets */; };
+		A7C9D40E1DE0A15000EA5637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D40C1DE0A15000EA5637 /* LaunchScreen.storyboard */; };
+		E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A9A759ECF4D0E7D82460A0D /* Pods-InBetWin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InBetWin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InBetWin/Pods-InBetWin.debug.xcconfig"; sourceTree = "<group>"; };
+		644735F79E92DE1831EBEA00 /* Pods_InBetWin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InBetWin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C529911B6A18B14A000676C /* Pods-InBetWin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InBetWin.release.xcconfig"; path = "Pods/Target Support Files/Pods-InBetWin/Pods-InBetWin.release.xcconfig"; sourceTree = "<group>"; };
+		A7C9D3FD1DE0A15000EA5637 /* InBetWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InBetWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7C9D4021DE0A15000EA5637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7C9D4051DE0A15000EA5637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7C9D4081DE0A15000EA5637 /* InBetWin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InBetWin.xcdatamodel; sourceTree = "<group>"; };
+		A7C9D40A1DE0A15000EA5637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7C9D40D1DE0A15000EA5637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7C9D40F1DE0A15000EA5637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7C9D3FA1DE0A15000EA5637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAEDAAA71D2AAC3217E7FFE /* Pods_InBetWin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AF5648AE41F1883DE095656 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A9A759ECF4D0E7D82460A0D /* Pods-InBetWin.debug.xcconfig */,
+				6C529911B6A18B14A000676C /* Pods-InBetWin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C0206A661186B9AA6A2C003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				644735F79E92DE1831EBEA00 /* Pods_InBetWin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7C9D3F41DE0A15000EA5637 = {
+			isa = PBXGroup;
+			children = (
+				A7C9D3FF1DE0A15000EA5637 /* InBetWin */,
+				A7C9D3FE1DE0A15000EA5637 /* Products */,
+				5AF5648AE41F1883DE095656 /* Pods */,
+				9C0206A661186B9AA6A2C003 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7C9D3FE1DE0A15000EA5637 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7C9D3FD1DE0A15000EA5637 /* InBetWin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7C9D3FF1DE0A15000EA5637 /* InBetWin */ = {
+			isa = PBXGroup;
+			children = (
+				A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */,
+				E50CB1831DE0AAE300A384B9 /* API */,
+				E50CB17F1DE0AA2F00A384B9 /* Model */,
+				E50CB1821DE0AAC800A384B9 /* View */,
+				E50CB1801DE0AA4200A384B9 /* Controllers */,
+				E50CB1811DE0AA9900A384B9 /* Constants */,
+				A7C9D40A1DE0A15000EA5637 /* Assets.xcassets */,
+				A7C9D4041DE0A15000EA5637 /* Main.storyboard */,
+				A7C9D40C1DE0A15000EA5637 /* LaunchScreen.storyboard */,
+				A7C9D40F1DE0A15000EA5637 /* Info.plist */,
+				A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */,
+			);
+			path = InBetWin;
+			sourceTree = "<group>";
+		};
+		E50CB17F1DE0AA2F00A384B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E50CB1801DE0AA4200A384B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7C9D4021DE0A15000EA5637 /* ViewController.swift */,
+				E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E50CB1811DE0AA9900A384B9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		E50CB1821DE0AAC800A384B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E50CB1831DE0AAE300A384B9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7C9D3FC1DE0A15000EA5637 /* InBetWin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C9D4121DE0A15000EA5637 /* Build configuration list for PBXNativeTarget "InBetWin" */;
+			buildPhases = (
+				757B5FA329AFC42BF4ECEAA8 /* [CP] Check Pods Manifest.lock */,
+				A7C9D3F91DE0A15000EA5637 /* Sources */,
+				A7C9D3FA1DE0A15000EA5637 /* Frameworks */,
+				A7C9D3FB1DE0A15000EA5637 /* Resources */,
+				C4E7A60CFB2B318FB62E5448 /* [CP] Embed Pods Frameworks */,
+				9D8D4811B36921A33AC98CEC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InBetWin;
+			productName = InBetWin;
+			productReference = A7C9D3FD1DE0A15000EA5637 /* InBetWin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7C9D3F51DE0A15000EA5637 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = com.AppRising.JAMM;
+				TargetAttributes = {
+					A7C9D3FC1DE0A15000EA5637 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = CJ24M7DKLZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A7C9D3F81DE0A15000EA5637 /* Build configuration list for PBXProject "InBetWin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7C9D3F41DE0A15000EA5637;
+			productRefGroup = A7C9D3FE1DE0A15000EA5637 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7C9D3FC1DE0A15000EA5637 /* InBetWin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7C9D3FB1DE0A15000EA5637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C9D40E1DE0A15000EA5637 /* LaunchScreen.storyboard in Resources */,
+				A7C9D40B1DE0A15000EA5637 /* Assets.xcassets in Resources */,
+				A7C9D4061DE0A15000EA5637 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		757B5FA329AFC42BF4ECEAA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D8D4811B36921A33AC98CEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InBetWin/Pods-InBetWin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E7A60CFB2B318FB62E5448 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InBetWin/Pods-InBetWin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7C9D3F91DE0A15000EA5637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */,
+				A7C9D4031DE0A15000EA5637 /* ViewController.swift in Sources */,
+				A7C9D4091DE0A15000EA5637 /* InBetWin.xcdatamodeld in Sources */,
+				A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7C9D4041DE0A15000EA5637 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7C9D4051DE0A15000EA5637 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7C9D40C1DE0A15000EA5637 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7C9D40D1DE0A15000EA5637 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7C9D4101DE0A15000EA5637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7C9D4111DE0A15000EA5637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7C9D4131DE0A15000EA5637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9A759ECF4D0E7D82460A0D /* Pods-InBetWin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CJ24M7DKLZ;
+				INFOPLIST_FILE = InBetWin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppRising.JAMM.InBetWin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A7C9D4141DE0A15000EA5637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C529911B6A18B14A000676C /* Pods-InBetWin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CJ24M7DKLZ;
+				INFOPLIST_FILE = InBetWin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppRising.JAMM.InBetWin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7C9D3F81DE0A15000EA5637 /* Build configuration list for PBXProject "InBetWin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C9D4101DE0A15000EA5637 /* Debug */,
+				A7C9D4111DE0A15000EA5637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7C9D4121DE0A15000EA5637 /* Build configuration list for PBXNativeTarget "InBetWin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C9D4131DE0A15000EA5637 /* Debug */,
+				A7C9D4141DE0A15000EA5637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A7C9D4081DE0A15000EA5637 /* InBetWin.xcdatamodel */,
+			);
+			currentVersion = A7C9D4081DE0A15000EA5637 /* InBetWin.xcdatamodel */;
+			path = InBetWin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A7C9D3F51DE0A15000EA5637 /* Project object */;
+}
