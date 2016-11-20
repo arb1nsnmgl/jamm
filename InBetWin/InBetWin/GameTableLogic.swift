@@ -28,7 +28,7 @@ class GameTableLogic {
     }
     
     func addPlayer() {
-        let player = Player(cardsInHand: [], tokens: 100)
+        let player = Player(tokens: 100, cardsInHand: [])
         players.append(player)
         print(player)
     }
