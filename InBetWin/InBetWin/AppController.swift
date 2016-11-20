@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AppController: UIViewController {
     
@@ -26,13 +27,17 @@ class AppController: UIViewController {
     // MARK: Set Up
     
     private func loadInitialViewController() {
-        
-        if Store.sharedInstance.token == "" {
-            actingViewController = loadViewController(withID: .loginVC)
-        } else {
-            // implement main vc
+        // Auth object listener
+        FIRAuth.auth()?.addStateDidChangeListener { auth, user in
+            if user != nil {
+                // user is signed in
+                self.actingViewController = self.loadViewController(withID: .mainVC)
+            } else {
+                // no user is signed in
+                self.actingViewController = self.loadViewController(withID: .loginVC)
+            }
+            self.addActing(viewController: self.actingViewController)
         }
-        addActing(viewController: actingViewController)
         
     }
     
@@ -50,6 +55,8 @@ class AppController: UIViewController {
         switch id {
         case .loginVC:
             return storyboard.instantiateViewController(withIdentifier: id.rawValue) as! LoginViewController
+        case .mainVC:
+            return storyboard.instantiateViewController(withIdentifier: id.rawValue) as! ViewController
         default:
             fatalError("ERROR: Unable to find controller with storyboard id: \(id)")
         }
