@@ -30,7 +30,7 @@ class CardGameLogic {
     
     var deck = Deck()
     var player: Player!
-    var dealer: Dealer!
+//    var dealer: Dealer!
     
     func drawCardforDealer() -> Int {
         

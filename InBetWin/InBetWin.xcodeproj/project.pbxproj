@@ -49,7 +49,6 @@
 		832663201DE12ACC00126B99 /* GameMechanics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMechanics.swift; sourceTree = "<group>"; };
 		832663221DE149B000126B99 /* UserAuthenticationFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthenticationFirebase.swift; sourceTree = "<group>"; };
 		832663501DE1E82600126B99 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		837C2E9C1DE1FAA300E076C9 /* InBetWin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InBetWin.entitlements; sourceTree = "<group>"; };
 		A7C9D3FD1DE0A15000EA5637 /* InBetWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InBetWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7C9D4021DE0A15000EA5637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -465,7 +464,6 @@
 			baseConfigurationReference = 5A9A759ECF4D0E7D82460A0D /* Pods-InBetWin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
 				DEVELOPMENT_TEAM = 3WL69W834X;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -481,7 +479,6 @@
 			baseConfigurationReference = 6C529911B6A18B14A000676C /* Pods-InBetWin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
 				DEVELOPMENT_TEAM = 3WL69W834X;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
