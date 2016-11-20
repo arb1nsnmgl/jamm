@@ -69,6 +69,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+
     @IBAction func betDownButtonTouched(_ sender: Any) {
         betAmountCounter -= 5
         betAmountLabel.text = "$ \(betAmountCounter)"
@@ -87,11 +88,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
 
         
+
     }
     
     @IBAction func foldButtonTouched(_ sender: Any) {
     }
     
+
     func updateView() {
         // Rounded Corners
         dealerCardImageView.layer.cornerRadius = 5.0
