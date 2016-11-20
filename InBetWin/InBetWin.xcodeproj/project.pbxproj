@@ -464,6 +464,7 @@
 			baseConfigurationReference = 5A9A759ECF4D0E7D82460A0D /* Pods-InBetWin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = CJ24M7DKLZ;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -479,6 +480,7 @@
 			baseConfigurationReference = 6C529911B6A18B14A000676C /* Pods-InBetWin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = CJ24M7DKLZ;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

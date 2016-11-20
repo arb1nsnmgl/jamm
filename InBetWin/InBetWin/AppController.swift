@@ -37,7 +37,7 @@ class AppController: UIViewController {
     }
     
     private func addNotificationObservers() {
-        // close login view controller & switch to activities once user has obtained an authorization token
+        // close login view controller & switch to activities once user has obtained an authorizat ion token
         NotificationCenter.default.addObserver(self, selector: #selector(switchViewController(with:)), name: .closeLoginVC, object: nil)
     }
     
