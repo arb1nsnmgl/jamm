@@ -36,8 +36,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     var gameTable = GameTableLogic()
-    var deck = Deck()
-    var store = CardAPIClient.shared
+    var playerFirstCard : Card!
+    var playerSecondCard : Card!
+    var player : Player { return gameTable.players.first! }
+    var dealer : Card {
+        return gameTable.dealer!
+    }
     
     
     @IBOutlet weak var playerCard2: UIImageView!
@@ -57,6 +61,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         updateView()
+        gameTable.drawDeck()
+        gameTable.addPlayer()
+        gameTable.addPlayer()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,7 +83,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func betButtonTouched(_ sender: Any) {
         
-        
+        updateDealer()
+        gameTable.playerTurnToBet(Double(betAmountCounter))
+        print("POT PRIZE: \(gameTable.pot)")
     // TODO: Fix Animation
         
 //        if flipped {
@@ -95,6 +104,39 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 
+    func updateDealer() {
+        
+        let image = gameTable.drawCardForTheDealer()
+        dealerCardImageView.image = image
+        
+    }
+    
+    func updatePlayer() {
+        
+        gameTable.drawCardsForThePlayers()
+        
+        let playerCards = gameTable.players[0].cardsInHand
+        
+        
+        for (index,card) in playerCards.enumerated() {
+            if index == 0 {
+                card.downloadImage({ _ in
+                    OperationQueue.main.addOperation {
+                        self.playerCardOneImageView.image = card.image
+                    }
+                })
+            } else {
+                card.downloadImage({ _ in
+                    OperationQueue.main.addOperation {
+                        self.playerCardTwoImageView.image = card.image
+                    }
+                })
+                
+            }
+        }
+        
+    }
+    
     func updateView() {
         // Rounded Corners
         dealerCardImageView.layer.cornerRadius = 5.0
@@ -157,9 +199,14 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBAction func higherButtonTouched(_ sender: Any) {
+        updatePlayer()
+        print(gameTable.pot)
     }
     
-    @IBOutlet weak var lowerButtonTouched: UIButton!
+    
+    @IBAction func lowerToucged(_ sender: Any) {
+        gameTable.evaluateCardForEachTurn(with: Double(betAmountCounter), from: player, dealer: dealer, response: nil)
+    }
     
 }
 

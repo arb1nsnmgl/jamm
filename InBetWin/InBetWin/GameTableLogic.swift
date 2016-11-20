@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 
 class GameTableLogic {
@@ -63,18 +63,19 @@ class GameTableLogic {
         
     }
     
-    func drawCardForTheDealer() {
+    func drawCardForTheDealer() -> UIImage? {
         
         deck.drawCards(numberOfCards: 1, handler: { _, cards in
             
             guard let card = cards?[0] else { return }
             OperationQueue.main.addOperation {
-                self.dealer = card
-                print(self.dealer?.value)
+                card.downloadImage({ success in
+                    self.dealer = card
+                })
             }
-        
+            
         })
-        
+        return dealer?.image
     }
     
     func evaluateCardForEachTurn(with bet: Double, from player: Player, dealer card: Card, response: Bool?) {

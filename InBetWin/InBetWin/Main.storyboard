@@ -49,7 +49,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhP-c3-IOz">
-                                <rect key="frame" x="267" y="224.5" width="133" height="34.5"/>
+                                <rect key="frame" x="267" y="225" width="133" height="34"/>
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.043137254899999998" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
                                 <state key="normal" title="Register">
@@ -60,7 +60,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fU-zY-BgW">
-                                <rect key="frame" x="267" y="170.5" width="133" height="34"/>
+                                <rect key="frame" x="267" y="170" width="133" height="35"/>
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.043137254899999998" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6fU-zY-BgW" secondAttribute="height" multiplier="166:43" id="tXx-IC-h0y"/>
@@ -355,12 +355,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8e-7F-sBu">
-                                <rect key="frame" x="536" y="295" width="65" height="30"/>
+                                <rect key="frame" x="536" y="295.5" width="65" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="E8e-7F-sBu" secondAttribute="height" multiplier="13:6" id="IMv-mP-cCf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                <state key="normal" title="Higher">
+                                <state key="normal" title="Draw">
                                     <color key="titleColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -368,11 +368,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ua-pR-Zzn">
-                                <rect key="frame" x="536" y="331" width="65" height="30"/>
+                                <rect key="frame" x="536" y="332" width="65" height="30"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
-                                <state key="normal" title="Lower">
+                                <state key="normal" title="Test">
                                     <color key="titleColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="lowerToucged:" destination="Ekh-og-4w8" eventType="touchUpInside" id="0Sm-q0-22z"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Tokens: 0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="H3b-9q-Qhg">
                                 <rect key="frame" x="199" y="220" width="89" height="20"/>
@@ -458,8 +461,6 @@
                         <outlet property="dealerCardBGView" destination="IBJ-Dx-3dq" id="gs2-tY-wJQ"/>
                         <outlet property="dealerCardImageView" destination="0nM-Lk-hZq" id="mK6-5w-gcJ"/>
                         <outlet property="higherButton" destination="E8e-7F-sBu" id="47p-bz-fG9"/>
-                        <outlet property="lowerButton" destination="9ua-pR-Zzn" id="ElI-xV-7wx"/>
-                        <outlet property="lowerButtonTouched" destination="9ua-pR-Zzn" id="dDE-cV-pYA"/>
                         <outlet property="playerCardOneBGView" destination="NLw-w2-5e7" id="7pe-6o-RIg"/>
                         <outlet property="playerCardOneImageView" destination="6Hz-Su-5gN" id="Bvv-1B-Llh"/>
                         <outlet property="playerCardTwoBGView" destination="siI-C3-kHO" id="PRv-0g-1G2"/>
