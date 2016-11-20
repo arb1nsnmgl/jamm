@@ -26,6 +26,4 @@ struct GameMechanics {
         
     }
     
-    
-    
 }
