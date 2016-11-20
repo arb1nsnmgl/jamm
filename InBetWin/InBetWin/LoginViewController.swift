@@ -47,7 +47,7 @@ class LoginViewController: UIViewController, FUIAuthDelegate {
     
     // conforming to protocol
     public func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
-    print(FIRAuth.auth()?.currentUser?.uid)
+        print(FIRAuth.auth()?.currentUser?.uid)
     }
     
     

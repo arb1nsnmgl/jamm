@@ -14,11 +14,11 @@ struct GameMechanics {
     var table: Table!
     var player: Player!
     var user = FIRAuth.auth()?.currentUser?.uid
+    var cardsInHand = [Card]()
     
     mutating func joinGame() {
         //create player, assign 100 token
-        //self.player = Player(tokens: 100, table: table.tableName)
-        
+        self.player = Player(tokens: 100, cardsInHand: cardsInHand)
         
     }
     

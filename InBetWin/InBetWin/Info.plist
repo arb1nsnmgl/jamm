@@ -36,6 +36,8 @@
 	<string>136944290116038</string>
 	<key>FacebookDisplayName</key>
 	<string>com.AppRising.JAMM.InBetWin</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<string>NO</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
