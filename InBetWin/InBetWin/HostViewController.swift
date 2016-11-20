@@ -25,6 +25,7 @@ class HostViewController: UIViewController {
     
     @IBAction func hostGame(_ sender: Any) {
         let tableItemRef = self.ref.child("table1")
+        print(ref)
         table.tableName = "table1"
         // create table
         tableItemRef.setValue(table.toAnyObject())

@@ -51,10 +51,10 @@ struct Table {
         
         
         return [
-            "tableName": tableName,
-            "players": player,
-            "round": round,
-            "pot": playerPot,
+            "tableName": tableName
+//            "players": player,
+//            "round": round,
+//            "pot": playerPot,
             
         ]
     }

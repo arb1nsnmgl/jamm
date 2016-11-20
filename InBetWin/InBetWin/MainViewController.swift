@@ -77,14 +77,15 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func betButtonTouched(_ sender: Any) {
         
         
-
-        if flipped {
-            UIView.transition(from: playerCardOneImageView, to: front, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
-            flipped = false
-        } else {
-            UIView.transition(from: front, to: playerCardOneImageView, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromLeft, completion: nil)
-            flipped = true
-        }
+    // TODO: Fix Animation
+        
+//        if flipped {
+//            UIView.transition(from: playerCardOneImageView, to: front, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
+//            flipped = false
+//        } else {
+//            UIView.transition(from: front, to: playerCardOneImageView, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromLeft, completion: nil)
+//            flipped = true
+//        }
 
         
 
