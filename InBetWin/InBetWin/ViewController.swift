@@ -36,8 +36,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var lowerButton: UIButton!
     
     
-    var store = CardAPIClient.shared
+    var gameTable = GameTableLogic()
     var deck = Deck()
+    var store = CardAPIClient.shared
+    
+    
+    @IBOutlet weak var playerCard2: UIImageView!
+    @IBOutlet weak var playercard1: UIImageView!
+    @IBOutlet weak var dealerCard: UIImageView!
+    
+    
     
     var betAmountCounter: Int = 0
     var users: [String] = ["Michael", "Jhantelle", "Alexey", "Arvin", "Juyyt", "kstyi", "zsrhvb", "yxucfiu", "vgcfzchj", "jvfcfzdgg", "hjgdgfzkhbj", "kjgvhhfcxhg"]
@@ -49,7 +57,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         updateView()
     }
     
