@@ -27,7 +27,8 @@
 		A7C9D4211DE0B83000EA5637 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4201DE0B83000EA5637 /* Deck.swift */; };
 		A7C9D4231DE0B8AC00EA5637 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4221DE0B8AC00EA5637 /* Card.swift */; };
 		A7C9D4251DE0CF7300EA5637 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4241DE0CF7300EA5637 /* Player.swift */; };
-		A7C9D4271DE0DB3500EA5637 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4261DE0DB3500EA5637 /* Dealer.swift */; };
+		A7C9D4291DE0EA9700EA5637 /* GameTableLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4281DE0EA9700EA5637 /* GameTableLogic.swift */; };
+		A7C9D42B1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D42A1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard */; };
 		E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */; };
 		E57F07C11DE0F0200035A51A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F07BF1DE0F0200035A51A /* Constants.swift */; };
 		E57F07C21DE0F0200035A51A /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F07C01DE0F0200035A51A /* Secrets.swift */; };
@@ -62,7 +63,9 @@
 		A7C9D4201DE0B83000EA5637 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		A7C9D4221DE0B8AC00EA5637 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A7C9D4241DE0CF7300EA5637 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		A7C9D4261DE0DB3500EA5637 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
+		A7C9D4281DE0EA9700EA5637 /* GameTableLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableLogic.swift; sourceTree = "<group>"; };
+		A7C9D42A1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ArvinStoryBoard.storyboard; sourceTree = "<group>"; };
+		A7C9D42C1DE186A400EA5637 /* InBetWin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InBetWin.entitlements; sourceTree = "<group>"; };
 		E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E57F07BF1DE0F0200035A51A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E57F07C01DE0F0200035A51A /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
@@ -121,7 +124,7 @@
 		A7C9D3FF1DE0A15000EA5637 /* InBetWin */ = {
 			isa = PBXGroup;
 			children = (
-				837C2E9C1DE1FAA300E076C9 /* InBetWin.entitlements */,
+				A7C9D42C1DE186A400EA5637 /* InBetWin.entitlements */,
 				A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */,
 				E50CB1831DE0AAE300A384B9 /* API */,
 				E50CB17F1DE0AA2F00A384B9 /* Model */,
@@ -134,6 +137,7 @@
 				E5ED8EB11DE0F2AE005874E9 /* GoogleService-Info.plist */,
 				A7C9D40F1DE0A15000EA5637 /* Info.plist */,
 				A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */,
+				A7C9D42A1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard */,
 			);
 			path = InBetWin;
 			sourceTree = "<group>";
@@ -144,7 +148,7 @@
 				A7C9D41C1DE0B2B100EA5637 /* CardGameLogic.swift */,
 				832663501DE1E82600126B99 /* User.swift */,
 				A7C9D4241DE0CF7300EA5637 /* Player.swift */,
-				A7C9D4261DE0DB3500EA5637 /* Dealer.swift */,
+				A7C9D4281DE0EA9700EA5637 /* GameTableLogic.swift */,
 				832663181DE0F23300126B99 /* Table.swift */,
 			);
 			name = Model;
@@ -264,6 +268,7 @@
 				708F438D1DE0D4B1008A272E /* Main.storyboard in Resources */,
 				E5ED8EB21DE0F2AE005874E9 /* GoogleService-Info.plist in Resources */,
 				A7C9D40E1DE0A15000EA5637 /* LaunchScreen.storyboard in Resources */,
+				A7C9D42B1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard in Resources */,
 				A7C9D40B1DE0A15000EA5637 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,8 +348,8 @@
 				A7C9D41F1DE0B40000EA5637 /* CardAPIClient.swift in Sources */,
 				A7C9D4251DE0CF7300EA5637 /* Player.swift in Sources */,
 				E57F07C11DE0F0200035A51A /* Constants.swift in Sources */,
-				A7C9D4271DE0DB3500EA5637 /* Dealer.swift in Sources */,
 				A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */,
+				A7C9D4291DE0EA9700EA5637 /* GameTableLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

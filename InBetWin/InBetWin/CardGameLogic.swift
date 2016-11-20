@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     
@@ -23,6 +24,7 @@ extension String {
     }
     
 }
+
 
 class CardGameLogic {
     

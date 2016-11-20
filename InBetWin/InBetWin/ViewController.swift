@@ -11,17 +11,34 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    var store = CardAPIClient.shared
+    var gameTable = GameTableLogic()
     var deck = Deck()
+    var store = CardAPIClient.shared
+    
+    
+    @IBOutlet weak var playerCard2: UIImageView!
+    @IBOutlet weak var playercard1: UIImageView!
+    @IBOutlet weak var dealerCard: UIImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //deck.newDeck({ success in print(success) })
+        deck.newDeck({ success in print(success) })
         
-        print("ACE".returnValue())
-        print("6".returnValue())
     }
-
+    
+    @IBAction func draw(_ sender: Any) {
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
 }
 

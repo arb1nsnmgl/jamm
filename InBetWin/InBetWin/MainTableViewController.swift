@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class MainTableViewController: UIViewController {
-    
+   
     var tableRef: FIRDatabaseReference?
     var table: Table? {
         didSet {
@@ -18,13 +18,10 @@ class MainTableViewController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-       
         
     }
 
