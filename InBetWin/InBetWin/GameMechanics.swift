@@ -17,8 +17,7 @@ struct GameMechanics {
     
     mutating func joinGame() {
         //create player, assign 100 token
-        self.player = Player(tokens: 100, table: table.tableName)
-        
+        self.player = Player(tokens: 100, cardsInHand: [])
         
     }
     
