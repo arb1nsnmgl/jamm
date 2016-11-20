@@ -228,7 +228,7 @@
 				TargetAttributes = {
 					A7C9D3FC1DE0A15000EA5637 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 3WL69W834X;
+						DevelopmentTeam = CJ24M7DKLZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -462,7 +462,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
 				DEVELOPMENT_TEAM = CJ24M7DKLZ;
-				DEVELOPMENT_TEAM = 3WL69W834X;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -479,7 +478,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
 				DEVELOPMENT_TEAM = CJ24M7DKLZ;
-				DEVELOPMENT_TEAM = 3WL69W834X;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

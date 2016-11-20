@@ -25,18 +25,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        deck.newDeck({ success in print(success) })
+        gameTable.drawDeck()
         
     }
     
     @IBAction func draw(_ sender: Any) {
         
-        
+        gameTable.drawCardForTheDealer()
         
     }
     
     
+   
+    @IBAction func drawPlayers(_ sender: Any) {
+        
+        gameTable.drawCardsForThePlayers()
+        
+    }
     
+    
+    @IBAction func addPlayer(_ sender: Any) {
+        
+        gameTable.addPlayer()
+        print(gameTable.players.count)
+    }
     
     
     

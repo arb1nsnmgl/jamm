@@ -20,7 +20,6 @@ extension String {
         case "JACK" : return 11
         default: return Int(self)!
         }
-        
     }
     
 }
