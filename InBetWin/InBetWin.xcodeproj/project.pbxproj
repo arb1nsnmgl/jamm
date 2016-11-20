@@ -58,6 +58,7 @@
 		A7C9D4241DE0CF7300EA5637 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A7C9D4281DE0EA9700EA5637 /* GameTableLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableLogic.swift; sourceTree = "<group>"; };
 		A7C9D42A1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ArvinStoryBoard.storyboard; sourceTree = "<group>"; };
+		A7C9D42C1DE186A400EA5637 /* InBetWin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InBetWin.entitlements; sourceTree = "<group>"; };
 		E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E57F07BF1DE0F0200035A51A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E57F07C01DE0F0200035A51A /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		A7C9D3FF1DE0A15000EA5637 /* InBetWin */ = {
 			isa = PBXGroup;
 			children = (
+				A7C9D42C1DE186A400EA5637 /* InBetWin.entitlements */,
 				A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */,
 				E50CB1831DE0AAE300A384B9 /* API */,
 				E50CB17F1DE0AA2F00A384B9 /* Model */,
@@ -222,6 +224,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = CJ24M7DKLZ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -445,6 +452,7 @@
 			baseConfigurationReference = 5A9A759ECF4D0E7D82460A0D /* Pods-InBetWin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
 				DEVELOPMENT_TEAM = CJ24M7DKLZ;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -459,6 +467,7 @@
 			baseConfigurationReference = 6C529911B6A18B14A000676C /* Pods-InBetWin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
 				DEVELOPMENT_TEAM = CJ24M7DKLZ;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
