@@ -24,6 +24,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="Vbp-Z6-2tb" id="16h-Rj-1W8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eb-xn-6u9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,33 +68,33 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WVS-zd-Db6" userLabel="playerCardTwo">
-                                <rect key="frame" x="441.5" y="229" width="75" height="105"/>
+                                <rect key="frame" x="442" y="229" width="75" height="105"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WVS-zd-Db6" secondAttribute="height" multiplier="113:157" id="WL8-IL-xpK"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5tt-wz-4OB" userLabel="dealerCard">
-                                <rect key="frame" x="379.5" y="32" width="75" height="105"/>
+                                <rect key="frame" x="380" y="32" width="75" height="105"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5tt-wz-4OB" secondAttribute="height" multiplier="113:157" id="5uO-2x-kBt"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acM-lH-TqW" userLabel="betUp">
-                                <rect key="frame" x="200.5" y="174.5" width="25" height="25"/>
+                                <rect key="frame" x="201" y="175" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="acM-lH-TqW" secondAttribute="height" multiplier="1:1" id="Tx7-no-iIM"/>
                                 </constraints>
                                 <state key="normal" image="betUpButton"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KB3-wb-Sgu" userLabel="betDown">
-                                <rect key="frame" x="200.5" y="244" width="25" height="25"/>
+                                <rect key="frame" x="201" y="245" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KB3-wb-Sgu" secondAttribute="height" multiplier="1:1" id="jV9-Et-SFX"/>
                                 </constraints>
                                 <state key="normal" image="betDownButton"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$99999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJT-Eh-fpN" userLabel="betAmount">
-                                <rect key="frame" x="184.5" y="209.5" width="57" height="23"/>
+                                <rect key="frame" x="183" y="210" width="60" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nJT-Eh-fpN" secondAttribute="height" multiplier="69:28" id="9Zg-gR-Fae"/>
                                 </constraints>
