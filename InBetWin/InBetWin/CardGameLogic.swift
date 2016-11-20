@@ -28,8 +28,13 @@ extension String {
 class CardGameLogic {
     
     var deck = Deck()
+<<<<<<< HEAD
     var playerCardValue1: Int?
     var playerCardValue2: Int?
+=======
+    var player: Player!
+    var dealer = Dealer()
+>>>>>>> master
     
     var dealerCardValue : Int?
     var dealerCardImage : UIImage?
@@ -49,6 +54,10 @@ class CardGameLogic {
         
     }
     
+<<<<<<< HEAD
+=======
+//    func evaluateCard(_ player: )
+>>>>>>> master
     
     
 }

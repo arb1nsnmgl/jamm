@@ -11,5 +11,30 @@ import Foundation
 
 class Player {
     
+<<<<<<< HEAD
+=======
+    var cardsInHand : [Card] = []
+    var tokens : Double
+    var isBetting = false
+    //JCB
+    var playerName: String!
+    
+    init(playerName: String, cardsInHand: [Card], tokens: Double) {
+        
+        self.cardsInHand = cardsInHand
+        self.tokens = tokens
+        
+    }
+    
+    //JCB
+    func toAnyObject() -> Any {
+        return [
+            "name": playerName,
+            "cardsInHand": cardsInHand,
+            "tokens": tokens
+        ]
+    }
+
+>>>>>>> master
 }
 
