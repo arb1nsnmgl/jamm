@@ -8,7 +8,12 @@
 
 import Foundation
 
-
-class Dealer {
+struct Dealer {
+    var card: String
+    var pot: Int
     
+    init(card: String, pot: Int) {
+        self.card = card
+        self.pot = pot
+    }
 }

@@ -32,6 +32,8 @@ class Deck {
                 self.deckID = deckID
                 self.shuffled = shuffled
                 self.remaining = remainingCard
+                print(deckID)
+                print(self.remaining)
                 completion(true)
             }
             

@@ -22,6 +22,9 @@ class LoginViewController: UIViewController, FUIAuthDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
+    @IBOutlet weak var signInButton: UIButton!
+    
     
     @IBAction func signupBtn(_ sender: Any) {
         // initialize authUI class to provide view controller
@@ -41,5 +44,13 @@ class LoginViewController: UIViewController, FUIAuthDelegate {
     }
     
     // conforming to protocol
-    public func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {}
+    public func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
+    print(FIRAuth.auth()?.currentUser?.uid)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! MainTableViewController
+        
+    }
 }
