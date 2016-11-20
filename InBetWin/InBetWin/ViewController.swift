@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    var cardGameLogic = CardGameLogic()
     var gameTable = GameTableLogic()
     var deck = Deck()
     var store = CardAPIClient.shared
@@ -32,15 +31,7 @@ class ViewController: UIViewController {
     
     @IBAction func draw(_ sender: Any) {
         
-        deck.drawCards(numberOfCards: 1, handler: { success, card in
-            guard let card = card?[0] else { fatalError() }
-            card.downloadImage({ _ in
-                OperationQueue.main.addOperation {
-                    self.dealerCard.image = card.image
-                    self.cardGameLogic.dealerCardValue = card.value.returnValue()
-                }
-            })
-        })
+        gameTable.drawCardForTheDealer()
         
     }
     

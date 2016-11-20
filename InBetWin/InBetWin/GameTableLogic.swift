@@ -61,7 +61,7 @@ class GameTableLogic {
         
     }
     
-    func evaluateCardForEachTurn(with bet: Double, from player: Player, dealer card: Card, response: Bool) {
+    func evaluateCardForEachTurn(with bet: Double, from player: Player, dealer card: Card, response: Bool?) {
         
         guard let playerFirstCard = player.cardsInHand.first?.value.returnValue() else { return }
         guard let playerSecondCard = player.cardsInHand.last?.value.returnValue() else { return }
@@ -78,7 +78,7 @@ class GameTableLogic {
         if playerFirstCard == playerSecondCard {
            
             // evaluate the player's decision
-            playersDecision(response, player: player, dealer: dealer, bet: bet)
+            playersDecision(response!, player: player, dealer: dealer, bet: bet)
             
         } else {
             
