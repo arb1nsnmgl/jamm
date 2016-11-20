@@ -31,7 +31,7 @@ class AppController: UIViewController {
         FIRAuth.auth()?.addStateDidChangeListener { auth, user in
             if user != nil {
                 // user is signed in
-                self.actingViewController = self.loadViewController(withID: .mainVC)
+                self.actingViewController = self.loadViewController(withID: .hostVC)
             } else {
                 // no user is signed in
                 self.actingViewController = self.loadViewController(withID: .loginVC)
@@ -56,7 +56,9 @@ class AppController: UIViewController {
         case .loginVC:
             return storyboard.instantiateViewController(withIdentifier: id.rawValue) as! LoginViewController
         case .mainVC:
-            return storyboard.instantiateViewController(withIdentifier: id.rawValue) as! ViewController
+            return storyboard.instantiateViewController(withIdentifier: id.rawValue) as! MainViewController
+        case .hostVC:
+            return storyboard.instantiateViewController(withIdentifier: id.rawValue) as! HostViewController
         default:
             fatalError("ERROR: Unable to find controller with storyboard id: \(id)")
         }

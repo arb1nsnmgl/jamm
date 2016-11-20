@@ -19,7 +19,7 @@ struct Table {
     var key: String? = ""
     var ref = FIRDatabaseReference()
     let user = FIRAuth.auth()?.currentUser?.uid
-    let tableName: String = ""
+    var tableName: String = ""
 //    var dealer = Dealer(card: "", pot: 0)
     
     init(snapshot: FIRDataSnapshot) {
@@ -38,14 +38,16 @@ struct Table {
         ref = snapshot.ref
     }
     
+    init() { }
+    
     //JCB
-    func toAnyObject(player: Player) -> Any {
+    func toAnyObject() -> Any {
         
-        let player = ["bet": player.bet,
-                      "pot": player.pot,
-                      "firstCard": player.firstCard,
-                      "secondCard": player.secondCard,
-                      "turn": player.turn] as [String : Any]
+//        let player = ["bet": player.bet,
+//                      "pot": player.pot,
+//                      "firstCard": player.firstCard,
+//                      "secondCard": player.secondCard,
+//                      "turn": player.turn] as [String : Any]
         
         
         return [

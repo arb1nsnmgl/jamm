@@ -11,11 +11,5 @@ import Foundation
 enum StoryboardID: String {
     case loginVC = "login-view-controller"
     case mainVC = "main-view-controller"
-}
-
-class Store {
-    static let sharedInstance = Store()
-    private init() {}
-    
-    var token = ""
+    case hostVC = "host-view-controller"
 }
