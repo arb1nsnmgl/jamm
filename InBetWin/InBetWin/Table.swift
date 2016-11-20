@@ -13,38 +13,55 @@ import FirebaseDatabaseUI
 struct Table {
     
     var player: String = "" //UID?
-    var dealerPot: Int = 0
-    var dealerCard: String = ""
-    var pot: Int = 0
+    var playerPot: Int = 0
     var players: [[String:Any]] = []
     var round: Int = 0
     var key: String? = ""
     var ref = FIRDatabaseReference()
     let user = FIRAuth.auth()?.currentUser?.uid
     let tableName: String = ""
-    
+    var dealer = Dealer(card: "", pot: 0)
     
     init(snapshot: FIRDataSnapshot) {
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: Any]
-        let dealer = snapshotValue["dealer"] as! [String: Any]
-        dealerCard = dealer["card"] as! String
-        dealerPot = dealer["pot"] as! Int
+        let dealerObject = snapshotValue["dealer"] as! [String: Any]
+        dealer.card = dealerObject["card"] as! String //Dealer from firebase
+        dealer.pot = dealerObject["pot"] as! Int
         players = snapshotValue["players"] as! [[String: Any]]
-        pot = snapshotValue["pot"] as! Int
+        for player in players {
+            let userID = player["userid"] as! String
+            guard let loggedIn = user else { return }
+            if userID == user {
+                playerPot = player["pot"] as! Int
+            }
+        }
         round = snapshotValue["dealer"] as! Int
-        
         ref = snapshot.ref
     }
     
     //JCB
-    func toAnyObject() -> Any {
+    func toAnyObject(player: Player) -> Any {
+        
+        let player = ["bet": player.bet,
+                      "pot": player.pot,
+                      "firstCard": player.firstCard,
+                      "secondCard": player.secondCard,
+                      "turn": player.turn] as [String : Any]
+        
+        let dealer = ["pot": self.dealer.pot,
+                      "card": self.dealer.card] as [String : Any]
+        
         return [
-            "tableName": tableName,
-            "dealerCard": dealerCard,
-            "players": players,
+            "tableName": tableName, //UId
+            "dealer": dealer,
+            "players": player,
             "round": round,
-            "pot": pot
+            "pot": playerPot,
+            
         ]
     }
+    
+    
+    
 }

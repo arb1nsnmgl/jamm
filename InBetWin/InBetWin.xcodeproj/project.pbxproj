@@ -15,6 +15,7 @@
 		8326631B1DE0F33300126B99 /* FirebaseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326631A1DE0F33300126B99 /* FirebaseDatabase.swift */; };
 		832663211DE12ACD00126B99 /* GameMechanics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832663201DE12ACC00126B99 /* GameMechanics.swift */; };
 		832663231DE149B000126B99 /* UserAuthenticationFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832663221DE149B000126B99 /* UserAuthenticationFirebase.swift */; };
+		832663511DE1E82600126B99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832663501DE1E82600126B99 /* User.swift */; };
 		A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */; };
 		A7C9D4031DE0A15000EA5637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4021DE0A15000EA5637 /* ViewController.swift */; };
 		A7C9D4091DE0A15000EA5637 /* InBetWin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */; };
@@ -47,6 +48,8 @@
 		8326631A1DE0F33300126B99 /* FirebaseDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseDatabase.swift; sourceTree = "<group>"; };
 		832663201DE12ACC00126B99 /* GameMechanics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMechanics.swift; sourceTree = "<group>"; };
 		832663221DE149B000126B99 /* UserAuthenticationFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthenticationFirebase.swift; sourceTree = "<group>"; };
+		832663501DE1E82600126B99 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		837C2E9C1DE1FAA300E076C9 /* InBetWin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InBetWin.entitlements; sourceTree = "<group>"; };
 		A7C9D3FD1DE0A15000EA5637 /* InBetWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InBetWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7C9D4021DE0A15000EA5637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C9D41C1DE0B2B100EA5637 /* CardGameLogic.swift */,
+				832663501DE1E82600126B99 /* User.swift */,
 				A7C9D4241DE0CF7300EA5637 /* Player.swift */,
 				A7C9D4281DE0EA9700EA5637 /* GameTableLogic.swift */,
 				832663181DE0F23300126B99 /* Table.swift */,
@@ -334,6 +338,7 @@
 				E57F07C41DE0F03C0035A51A /* Extensions.swift in Sources */,
 				708F438F1DE0D6DA008A272E /* UserTableViewCell.swift in Sources */,
 				8326631B1DE0F33300126B99 /* FirebaseDatabase.swift in Sources */,
+				832663511DE1E82600126B99 /* User.swift in Sources */,
 				A7C9D4091DE0A15000EA5637 /* InBetWin.xcdatamodeld in Sources */,
 				708F43911DE0D6F6008A272E /* UserTableView.swift in Sources */,
 				A7C9D4211DE0B83000EA5637 /* Deck.swift in Sources */,

@@ -15,9 +15,9 @@ struct GameMechanics {
     var player: Player!
     var user = FIRAuth.auth()?.currentUser?.uid
     
-    func joinGame() {
+    mutating func joinGame() {
         //create player, assign 100 token
-        
+        self.player = Player(tokens: 100, table: table.tableName)
         
         
     }
