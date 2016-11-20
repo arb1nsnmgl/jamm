@@ -38,7 +38,9 @@ struct Table {
         ref = snapshot.ref
     }
     
-    init() { }
+    init(tableName: String) {
+    
+    self.tableName = tableName }
     
     //JCB
     func toAnyObject() -> Any {

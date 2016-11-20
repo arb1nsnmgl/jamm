@@ -12,11 +12,10 @@ import Firebase
 class HostViewController: UIViewController {
 
     let ref = FIRDatabase.database().reference(withPath: "table")
-    var table: Table!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.table = Table()
     }
 
     @IBAction func joinGame(_ sender: Any) {
@@ -26,9 +25,10 @@ class HostViewController: UIViewController {
     @IBAction func hostGame(_ sender: Any) {
         let tableItemRef = self.ref.child("table1")
         print(ref)
-        table.tableName = "table1"
+        var table = Table(tableName: "table2")
         // create table
         tableItemRef.setValue(table.toAnyObject())
+        print("hello \(table)")
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
