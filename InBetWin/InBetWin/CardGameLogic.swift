@@ -23,8 +23,3 @@ extension String {
     }
     
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> master
