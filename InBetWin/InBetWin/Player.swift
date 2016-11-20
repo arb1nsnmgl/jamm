@@ -11,8 +11,6 @@ import Foundation
 
 class Player {
     
-<<<<<<< HEAD
-=======
     var cardsInHand : [Card] = []
     var tokens : Double
     var isBetting = false
@@ -35,6 +33,5 @@ class Player {
         ]
     }
 
->>>>>>> master
 }
 
