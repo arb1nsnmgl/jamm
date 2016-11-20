@@ -14,18 +14,24 @@ import FirebaseDatabase
 class Player {
     
     var cardsInHand : [Card] = []
-    var tokens : Double = 0.0
+    var tokens : Double = 0
+    
     var isBetting = false
     //JCB
     var playerName: String? = ""
-    let user = FIRAuth.auth()?.currentUser?.uid
+//    let user = FIRAuth.auth()?.currentUser?.uid
     var key: String? = ""
-    var tableID: String? = ""
+    var tableID: String?
     var ref: FIRDatabaseReference?
+    var firstCard: String = ""
+    var secondCard: String = ""
+    var pot: Int = 0
+    var turn = false
+    var bet: Int = 0
     
-    init(cardsInHand: [Card], tokens: Double) {
-        self.cardsInHand = cardsInHand
+    init(tokens: Double, table: String) {
         self.tokens = tokens
+        self.tableID = table
     }
     
     //JCB
@@ -48,10 +54,5 @@ class Player {
             "cardsInHand": cardsInHand
         ]
     }
-    
-    func createPlayer() {
-        //Get Player name from the User ID
-    }
-
 }
 

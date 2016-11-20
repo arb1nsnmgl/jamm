@@ -18,11 +18,7 @@ struct FirebaseDatabase {
     var user = FIRAuth.auth()?.currentUser?.uid
     
     func createPlayer() {
-        
-        
-        
-        
-        for player in players {
+       for player in players {
             let playerItemRef = self.ref.child("player")
             playerItemRef.setValue(player.toAnyObject())
         }
@@ -31,7 +27,7 @@ struct FirebaseDatabase {
     func createTables() {
         for table in tables {
             let tableItemRef = self.ref.child("table")
-            tableItemRef.setValue(table.toAnyObject())
+//            tableItemRef.setValue(table.toAnyObject())
         }
     }
     
