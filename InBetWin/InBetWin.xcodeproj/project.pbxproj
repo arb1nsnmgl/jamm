@@ -13,6 +13,8 @@
 		708F43911DE0D6F6008A272E /* UserTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708F43901DE0D6F6008A272E /* UserTableView.swift */; };
 		832663191DE0F23300126B99 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832663181DE0F23300126B99 /* Table.swift */; };
 		8326631B1DE0F33300126B99 /* FirebaseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326631A1DE0F33300126B99 /* FirebaseDatabase.swift */; };
+		832663211DE12ACD00126B99 /* GameMechanics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832663201DE12ACC00126B99 /* GameMechanics.swift */; };
+		832663231DE149B000126B99 /* UserAuthenticationFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832663221DE149B000126B99 /* UserAuthenticationFirebase.swift */; };
 		A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */; };
 		A7C9D4031DE0A15000EA5637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4021DE0A15000EA5637 /* ViewController.swift */; };
 		A7C9D4091DE0A15000EA5637 /* InBetWin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */; };
@@ -43,6 +45,8 @@
 		708F43901DE0D6F6008A272E /* UserTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableView.swift; sourceTree = "<group>"; };
 		832663181DE0F23300126B99 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		8326631A1DE0F33300126B99 /* FirebaseDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseDatabase.swift; sourceTree = "<group>"; };
+		832663201DE12ACC00126B99 /* GameMechanics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMechanics.swift; sourceTree = "<group>"; };
+		832663221DE149B000126B99 /* UserAuthenticationFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthenticationFirebase.swift; sourceTree = "<group>"; };
 		A7C9D3FD1DE0A15000EA5637 /* InBetWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InBetWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C9D4001DE0A15000EA5637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7C9D4021DE0A15000EA5637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				708F438E1DE0D6DA008A272E /* UserTableViewCell.swift */,
 				708F43901DE0D6F6008A272E /* UserTableView.swift */,
 				8326631A1DE0F33300126B99 /* FirebaseDatabase.swift */,
+				832663221DE149B000126B99 /* UserAuthenticationFirebase.swift */,
+				832663201DE12ACC00126B99 /* GameMechanics.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -222,7 +228,7 @@
 				TargetAttributes = {
 					A7C9D3FC1DE0A15000EA5637 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CJ24M7DKLZ;
+						DevelopmentTeam = 3WL69W834X;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -318,10 +324,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832663211DE12ACD00126B99 /* GameMechanics.swift in Sources */,
 				A7C9D41D1DE0B2B100EA5637 /* CardGameLogic.swift in Sources */,
 				E57F07C21DE0F0200035A51A /* Secrets.swift in Sources */,
 				A7C9D4231DE0B8AC00EA5637 /* Card.swift in Sources */,
 				E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */,
+				832663231DE149B000126B99 /* UserAuthenticationFirebase.swift in Sources */,
 				A7C9D4031DE0A15000EA5637 /* ViewController.swift in Sources */,
 				E57F07C41DE0F03C0035A51A /* Extensions.swift in Sources */,
 				708F438F1DE0D6DA008A272E /* UserTableViewCell.swift in Sources */,
@@ -454,9 +462,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
 				DEVELOPMENT_TEAM = CJ24M7DKLZ;
+				DEVELOPMENT_TEAM = 3WL69W834X;
 				INFOPLIST_FILE = InBetWin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AppRising.JAMM.InBetWin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.inbetwin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -469,9 +479,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
 				DEVELOPMENT_TEAM = CJ24M7DKLZ;
+				DEVELOPMENT_TEAM = 3WL69W834X;
 				INFOPLIST_FILE = InBetWin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AppRising.JAMM.InBetWin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.inbetwin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 class MainTableViewController: UIViewController {
-
+   
+    var tableRef: FIRDatabaseReference?
+    var table: Table? {
+        didSet {
+          title = table?.tableName
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
