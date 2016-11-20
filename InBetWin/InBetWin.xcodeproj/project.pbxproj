@@ -231,7 +231,7 @@
 				TargetAttributes = {
 					A7C9D3FC1DE0A15000EA5637 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 3WL69W834X;
+						DevelopmentTeam = CJ24M7DKLZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -464,7 +464,8 @@
 			baseConfigurationReference = 5A9A759ECF4D0E7D82460A0D /* Pods-InBetWin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3WL69W834X;
+				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
+				DEVELOPMENT_TEAM = CJ24M7DKLZ;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -479,7 +480,8 @@
 			baseConfigurationReference = 6C529911B6A18B14A000676C /* Pods-InBetWin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3WL69W834X;
+				CODE_SIGN_ENTITLEMENTS = InBetWin/InBetWin.entitlements;
+				DEVELOPMENT_TEAM = CJ24M7DKLZ;
 				INFOPLIST_FILE = InBetWin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

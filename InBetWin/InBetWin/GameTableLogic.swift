@@ -18,7 +18,21 @@ class GameTableLogic {
     var isGameOnHold = true
     var pot: Double = 0
     var whosTurnToBet = 0
-   
+    
+    
+    
+    func drawDeck() {
+        
+        deck.newDeck({ success in print(success) })
+        
+    }
+    
+    func addPlayer() {
+        let player = Player(cardsInHand: [], tokens: 100)
+        players.append(player)
+        print(player)
+    }
+    
     func drawCardsForThePlayers() {
         
         if players.count >= 2 && isGameOnHold {
@@ -27,7 +41,9 @@ class GameTableLogic {
                 deck.drawCards(numberOfCards: 2, handler: { _ , cards in
                     guard let cards = cards else { return }
                     OperationQueue.main.addOperation {
+                        print(cards)
                         player.cardsInHand = cards
+                        print(player.cardsInHand.count)
                         player.tokens -= 5
                         self.pot += 5
                     }
@@ -55,6 +71,7 @@ class GameTableLogic {
             guard let card = cards?[0] else { return }
             OperationQueue.main.addOperation {
                 self.dealer = card
+                print(self.dealer?.value)
             }
         
         })
