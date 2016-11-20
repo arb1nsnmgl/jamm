@@ -18,18 +18,17 @@ class GameTableLogic {
     var isGameOnHold = true
     var pot: Double = 0
     var whosTurnToBet = 0
-    
-    
-    
+    var database: FirebaseDatabase?
+
     func drawDeck() {
-        
         deck.newDeck({ success in print(success) })
-        
     }
     
     func addPlayer() {
-        let player = Player(cardsInHand: [], tokens: 100)
+        let player = Player(tokens: 100, cardsInHand: [])
         players.append(player)
+        //JCB
+        database?.addPlayerToFBase(player: player)
         print(player)
     }
     

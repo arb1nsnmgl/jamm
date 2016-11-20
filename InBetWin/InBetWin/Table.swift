@@ -26,8 +26,6 @@ struct Table {
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: Any]
         let dealerObject = snapshotValue["dealer"] as! [String: Any]
-//        dealer.card = dealerObject["card"] as! String //Dealer from firebase
-//        dealer.pot = dealerObject["pot"] as! Int
         players = snapshotValue["players"] as! [[String: Any]]
         for player in players {
             let userID = player["userid"] as! String
@@ -49,12 +47,9 @@ struct Table {
                       "secondCard": player.secondCard,
                       "turn": player.turn] as [String : Any]
         
-//        let dealer = ["pot": self.dealer.pot,
-//                      "card": self.dealer.card] as [String : Any]
         
         return [
-            "tableName": tableName, //UId
-//            "dealer": dealer,
+            "tableName": tableName,
             "players": player,
             "round": round,
             "pot": playerPot,

@@ -30,17 +30,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func draw(_ sender: Any) {
-        
         gameTable.drawCardForTheDealer()
-        
     }
     
     
    
     @IBAction func drawPlayers(_ sender: Any) {
-        
         gameTable.drawCardsForThePlayers()
-        
     }
     
     

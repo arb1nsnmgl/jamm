@@ -29,9 +29,9 @@ class Player {
     var turn = false
     var bet: Int = 0
     
-    init(tokens: Double, table: String) {
+    init(tokens: Double, cardsInHand: [Card]) {
         self.tokens = tokens
-        self.tableID = table
+        self.cardsInHand = cardsInHand
     }
     
     //JCB
