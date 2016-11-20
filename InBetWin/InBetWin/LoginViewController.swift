@@ -17,6 +17,8 @@ class LoginViewController: UIViewController, FUIAuthDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateButtonView()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,6 +53,15 @@ class LoginViewController: UIViewController, FUIAuthDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! MainTableViewController
+        
+    }
+    
+    func updateButtonView() {
+        signInButton.layer.cornerRadius = 3.0
+        
+        signInButton.layer.masksToBounds = false
+        signInButton.layer.shadowColor = UIColor.black.cgColor
+        signInButton.layer.shadowRadius = CGFloat(10)
         
     }
 }

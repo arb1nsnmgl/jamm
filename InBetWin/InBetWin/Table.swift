@@ -20,14 +20,14 @@ struct Table {
     var ref = FIRDatabaseReference()
     let user = FIRAuth.auth()?.currentUser?.uid
     let tableName: String = ""
-    var dealer = Dealer(card: "", pot: 0)
+    // var dealer = Dealer(card: "", pot: 0)
     
     init(snapshot: FIRDataSnapshot) {
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: Any]
         let dealerObject = snapshotValue["dealer"] as! [String: Any]
-        dealer.card = dealerObject["card"] as! String //Dealer from firebase
-        dealer.pot = dealerObject["pot"] as! Int
+        // dealer.card = dealerObject["card"] as! String //Dealer from firebase
+        // dealer.pot = dealerObject["pot"] as! Int
         players = snapshotValue["players"] as! [[String: Any]]
         for player in players {
             let userID = player["userid"] as! String
@@ -49,12 +49,12 @@ struct Table {
                       "secondCard": player.secondCard,
                       "turn": player.turn] as [String : Any]
         
-        let dealer = ["pot": self.dealer.pot,
-                      "card": self.dealer.card] as [String : Any]
+        // let dealer = ["pot": self.dealer.pot,
+        //              "card": self.dealer.card] as [String : Any]
         
         return [
             "tableName": tableName, //UId
-            "dealer": dealer,
+            //"dealer": dealer,
             "players": player,
             "round": round,
             "pot": playerPot,

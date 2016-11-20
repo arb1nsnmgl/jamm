@@ -41,9 +41,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var store = CardAPIClient.shared
     
     
-    @IBOutlet weak var playerCard2: UIImageView!
-    @IBOutlet weak var playercard1: UIImageView!
-    @IBOutlet weak var dealerCard: UIImageView!
+//    @IBOutlet weak var playerCard2: UIImageView!
+//    @IBOutlet weak var playercard1: UIImageView!
+//    @IBOutlet weak var dealerCard: UIImageView!
     
     
     
@@ -52,12 +52,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var flipped = true
     
-    //test card
-    let front = UIImageView(image: UIImage(named: "cardPlaceholder.png"))
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateView()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,15 +74,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBAction func betButtonTouched(_ sender: Any) {
         
-        
-
-        if flipped {
-            UIView.transition(from: playerCardOneImageView, to: front, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
-            flipped = false
-        } else {
-            UIView.transition(from: front, to: playerCardOneImageView, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromLeft, completion: nil)
-            flipped = true
-        }
+//       
+//        if flipped {
+//            UIView.transition(from: back, to: front, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
+//            flipped = false
+//        } else {
+//            UIView.transition(from: front, to: back, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromLeft, completion: nil)
+//            flipped = true
+//        }
 
         
     }
