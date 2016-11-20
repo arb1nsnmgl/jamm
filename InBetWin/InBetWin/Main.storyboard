@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6bz-Cu-ZwY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BEf-2Z-Lbs">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,10 +11,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--App Controller-->
+        <scene sceneID="bFl-p7-AQX">
+            <objects>
+                <viewController id="BEf-2Z-Lbs" customClass="AppController" customModule="InBetWin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="av6-pF-Vn0"/>
+                        <viewControllerLayoutGuide type="bottom" id="twY-gf-qgo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vbp-Z6-2tb">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eb-xn-6u9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-780" y="-589"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="gqe-PH-eU5">
             <objects>
-                <viewController id="bf0-Cd-a46" customClass="ViewController" customModule="InBetWin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main-view-controller" id="bf0-Cd-a46" customClass="ViewController" customModule="InBetWin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IYq-eN-Adb"/>
                         <viewControllerLayoutGuide type="bottom" id="QTn-BB-2Hm"/>
@@ -150,7 +168,7 @@
         <!--Login View Controller-->
         <scene sceneID="thd-gD-Mf1">
             <objects>
-                <viewController id="6bz-Cu-ZwY" customClass="LoginViewController" customModule="InBetWin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login-view-controller" id="6bz-Cu-ZwY" customClass="LoginViewController" customModule="InBetWin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jy1-cc-KOT"/>
                         <viewControllerLayoutGuide type="bottom" id="Wyx-PV-ySZ"/>

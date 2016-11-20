@@ -13,9 +13,3 @@ enum StoryboardID: String {
     case mainVC = "main-view-controller"
 }
 
-class Store {
-    static let sharedInstance = Store()
-    private init() {}
-    
-    var token = ""
-}
