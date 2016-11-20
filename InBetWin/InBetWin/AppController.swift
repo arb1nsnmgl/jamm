@@ -53,8 +53,6 @@ class AppController: UIViewController {
         default:
             fatalError("ERROR: Unable to find controller with storyboard id: \(id)")
         }
-        
-        
     }
     
     private func addActing(viewController: UIViewController) {
@@ -75,7 +73,6 @@ class AppController: UIViewController {
         default:
             fatalError("ERROR: Unable to match notification name")
         }
-        
     }
     
     private func switchToViewController(withID id: StoryboardID) {
