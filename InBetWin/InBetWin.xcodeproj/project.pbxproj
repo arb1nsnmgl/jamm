@@ -23,6 +23,8 @@
 		A7C9D4231DE0B8AC00EA5637 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4221DE0B8AC00EA5637 /* Card.swift */; };
 		A7C9D4251DE0CF7300EA5637 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4241DE0CF7300EA5637 /* Player.swift */; };
 		A7C9D4271DE0DB3500EA5637 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4261DE0DB3500EA5637 /* Dealer.swift */; };
+		A7C9D4291DE0EA9700EA5637 /* GameTableLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C9D4281DE0EA9700EA5637 /* GameTableLogic.swift */; };
+		A7C9D42B1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C9D42A1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard */; };
 		E50CB17E1DE0A4AC00A384B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		A7C9D4221DE0B8AC00EA5637 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A7C9D4241DE0CF7300EA5637 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A7C9D4261DE0DB3500EA5637 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
+		A7C9D4281DE0EA9700EA5637 /* GameTableLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableLogic.swift; sourceTree = "<group>"; };
+		A7C9D42A1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ArvinStoryBoard.storyboard; sourceTree = "<group>"; };
 		E50CB17D1DE0A4AC00A384B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +115,7 @@
 				708F438C1DE0D4B1008A272E /* Main.storyboard */,
 				A7C9D40F1DE0A15000EA5637 /* Info.plist */,
 				A7C9D4071DE0A15000EA5637 /* InBetWin.xcdatamodeld */,
+				A7C9D42A1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard */,
 			);
 			path = InBetWin;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				A7C9D41C1DE0B2B100EA5637 /* CardGameLogic.swift */,
 				A7C9D4241DE0CF7300EA5637 /* Player.swift */,
 				A7C9D4261DE0DB3500EA5637 /* Dealer.swift */,
+				A7C9D4281DE0EA9700EA5637 /* GameTableLogic.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 			files = (
 				708F438D1DE0D4B1008A272E /* Main.storyboard in Resources */,
 				A7C9D40E1DE0A15000EA5637 /* LaunchScreen.storyboard in Resources */,
+				A7C9D42B1DE0EDBE00EA5637 /* ArvinStoryBoard.storyboard in Resources */,
 				A7C9D40B1DE0A15000EA5637 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +305,7 @@
 				A7C9D4251DE0CF7300EA5637 /* Player.swift in Sources */,
 				A7C9D4271DE0DB3500EA5637 /* Dealer.swift in Sources */,
 				A7C9D4011DE0A15000EA5637 /* AppDelegate.swift in Sources */,
+				A7C9D4291DE0EA9700EA5637 /* GameTableLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

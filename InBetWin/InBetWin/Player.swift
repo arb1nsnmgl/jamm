@@ -11,15 +11,5 @@ import Foundation
 
 class Player {
     
-    var cardsInHand : [Card] = []
-    var tokens : Double
-    var isBetting = false
-    
-    init(tokens: Double) {
-        
-        self.tokens = tokens
-        
-    }
-    
 }
 

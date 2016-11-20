@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     
@@ -27,52 +28,27 @@ extension String {
 class CardGameLogic {
     
     var deck = Deck()
-    var playerCardValue : [Int] = []
+    var playerCardValue1: Int?
+    var playerCardValue2: Int?
+    
     var dealerCardValue : Int?
+    var dealerCardImage : UIImage?
     
-    func drawCardforDealer() {
-        
-        deck.drawCards(numberOfCards: 1, handler: { success, card in
-            
-            
-            OperationQueue.main.addOperation {
-                //card[0].downloadImage(<#T##handler: (Bool) -> Void##(Bool) -> Void#>)
-                if let value = card?[0].value {
-                    self.dealerCardValue = value.returnValue()
-                }
-            }
-        })
-        
-    }
+    var status = false
     
-    func drawCardForPlayers() {
-        
-        deck.drawCards(numberOfCards: 2, handler: { success, cards in
-            
-            guard let drawnCards = cards else { fatalError() }
-            for card in drawnCards {
-                OperationQueue.main.addOperation {
-                    //card.downloadImage(<#T##handler: (Bool) -> Void##(Bool) -> Void#>)
-                    self.playerCardValue.append(card.value.returnValue())
-                    self.playerCardValue.sort(by: <)
-                }
-            }
-        })
-        
-    }
     
     func evaluateCard() {
         
-        guard let playerFirstCard = playerCardValue.first else { return }
-        guard let playerSecondCard = playerCardValue.last else { return }
-        guard let dealerCard = dealerCardValue else { return }
-        
-        switch dealerCard {
-        case playerFirstCard, playerSecondCard: print("you lose")
-        case playerFirstCard...playerSecondCard: print("In between!")
-        default: print("You lose")
-            
-        }
+    }
+    
+    func drawCardForDealer() {
         
     }
+    
+    func drawCardForPlayer() {
+        
+    }
+    
+    
+    
 }
